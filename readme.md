@@ -9,6 +9,8 @@
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 
+![Robot Student](pictures/robot_student.png)
+
 ## 🌟 Key Features
 ## Welcome
 Welcome to the AI-Powered Chatbot and RAG System! This project leverages the capabilities of AI models, including the Mixtral model from Hugging Face, to provide intelligent interaction with uploaded documents, quizzes, and assignment generation based on user inputs.
