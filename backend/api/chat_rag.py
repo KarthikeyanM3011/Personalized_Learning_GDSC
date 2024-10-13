@@ -13,7 +13,7 @@ def initialize_index(num_features):
     return faiss.IndexFlatL2(num_features)
 
 def generate_answer(user_question, context):
-    client = InferenceClient(api_key="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")
+    client = InferenceClient(api_key="YOUR_HUGGINGFACE_API")
     prompt = f"""
     You are a knowledgeable assistant. Based on the following content, answer the question clearly and concisely.
 

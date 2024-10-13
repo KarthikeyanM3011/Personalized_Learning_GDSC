@@ -4,7 +4,7 @@ from huggingface_hub import InferenceClient
 assignment_blueprint = Blueprint('assignment', __name__)
 
 def generate_assignment_questions(topic, level, num_questions=5):
-    client = InferenceClient(api_key="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")
+    client = InferenceClient(api_key="YOUR_HUGGINGFACE_API")
     
     prompt = f"""
     Generate {num_questions} short 2-mark questions on the topic {topic} for {level} level. Each question should test the understanding of fundamental concepts and be straightforward, requiring precise but concise answers. Follow the format:
@@ -45,7 +45,7 @@ def generate_assignment_questions(topic, level, num_questions=5):
     return questions
 
 def generate_questions_from_text(text_content, level, num_questions=5):
-    client = InferenceClient(api_key="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")
+    client = InferenceClient(api_key="YOUR_HUGGINGFACE_API")
     
     prompt = f"""
     Based on the following text, generate {num_questions} short 2-mark questions suitable for {level} level. Each question should focus on key concepts or important details within the text. The questions should be straightforward and require precise but concise answers. Follow the format:
@@ -89,7 +89,7 @@ def generate_questions_from_text(text_content, level, num_questions=5):
     return questions
 
 def evaluate_answers(questions, user_answers):
-    client = InferenceClient(api_key="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")
+    client = InferenceClient(api_key="YOUR_HUGGINGFACE_API")
     
     prompt = "Evaluate the following answers to 2-mark questions and provide only the scores out of 2. Format: <Q_Number> | Score out of 2: <Score>.\n"
     

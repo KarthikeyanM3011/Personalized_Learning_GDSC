@@ -5,7 +5,7 @@ chatbot_blueprint = Blueprint('chatbot', __name__)
 
 def generate_chat_response(history, current_question):
     try:
-        client = InferenceClient(api_key="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")
+        client = InferenceClient(api_key="YOUR_HUGGINGFACE_API")
         prompt = f"""
         You are a knowledgeable teacher and professor. Please provide a clear and concise answer to the following question based on the given conversation history.
 

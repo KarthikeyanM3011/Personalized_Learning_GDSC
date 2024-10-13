@@ -5,7 +5,7 @@ quiz_generate = Blueprint('quiz_generate', __name__)
 
 def generate_quiz_from_topic(topic, level):
     try:
-        client = InferenceClient(api_key="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")
+        client = InferenceClient(api_key="YOUR_HUGGINGFACE_API")
         prompt = f"""
         Generate 5 {level} level quiz questions on the topic {topic} in the following format:
         
@@ -70,7 +70,7 @@ def generate_quiz_ontopic():
 
 def generate_quiz_from_content(text_content, level):
     try:
-        client = InferenceClient(api_key="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")
+        client = InferenceClient(api_key="YOUR_HUGGINGFACE_API")
         prompt = f"""
         Based on the following content, generate 5 {level} level quiz questions. 
         Each question should focus on key concepts or important details within the text. 
