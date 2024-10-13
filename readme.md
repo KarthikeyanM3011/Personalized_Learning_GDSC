@@ -78,6 +78,8 @@ To install the project, follow these steps:
     python main.py
     ```
 
+2. Replace YOUR_HUGGINGFACE_API with your API KEY in backend files
+
 ### 🖥️ Interface
 <p align="center">
   <img src="pictures/Signup.png" width="250" style="margin-right: 10px;"/>
