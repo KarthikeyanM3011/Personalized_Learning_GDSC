@@ -1,0 +1,12 @@
+Flask
+Flask-CORS
+Flask-SQLAlchemy
+Flask-RESTful
+PyPDF2
+python-docx
+python-pptx
+streamlit
+requests
+huggingface_hub
+faiss-cpu
+scikit-learn
