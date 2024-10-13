@@ -58,7 +58,7 @@ def generate_quiz_from_topic(topic, level):
 def generate_quiz_ontopic():
     data = request.json
     topic = data.get("topic")
-    level = data.get("level")
+    level = data.get("level", "Intermediate")
 
     if not topic or not level:
         return jsonify({"error": "Both 'topic' and 'level' must be provided."}), 400
