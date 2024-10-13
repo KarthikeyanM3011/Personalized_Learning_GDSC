@@ -9,7 +9,9 @@
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 
-![Robot Student](pictures/image.png)
+<p align="center">
+  <img src="pictures/image.png" width="350" height="300" style="margin-right: 10px;"/>
+</p>
 
 ## 🌟 Key Features
 ## Welcome
