@@ -6,9 +6,8 @@ from assignment import show_assignment
 
 def show_home():
     """Display the home page with sidebar navigation."""
-    # Define the available features
     features = {
-        "Welcome": "Welcome to the Learning Path Application!",
+        "Welcome": "Welcome to the Learning Path Application!\nGDSC by Karthikeyan M",
         "Chatbot": "Interact with our intelligent chatbot.",
         "RAG Chat": "Upload documents and chat with them.",
         "Quiz Generation": "Generate quizzes based on topics or documents.",
