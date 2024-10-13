@@ -52,7 +52,7 @@ This project incorporates several technologies for robust performance and modula
 - **SQLAlchemy**: An ORM (Object-Relational Mapping) tool for interacting with relational databases in Python.
 - **Blueprints**: Used in Flask for modularizing the application, allowing for cleaner code and easier management of routes and views.
 - **Streamlit**: For building the interactive front end that communicates with the backend services.
-- **Hugging Face Models**: Integrating advanced NLP models for chatbot responses and document analysis.
+- **Hugging Face Models**: Integrating advanced NLP models and different Prompt engineering techniques for chatbot responses and document analysis.
 
 ## Installation
 To install the project, follow these steps:
