@@ -9,6 +9,7 @@
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 
+## 🌟 Key Features
 ## Welcome
 Welcome to the AI-Powered Chatbot and RAG System! This project leverages the capabilities of AI models, including the Mixtral model from Hugging Face, to provide intelligent interaction with uploaded documents, quizzes, and assignment generation based on user inputs.
 
@@ -72,6 +73,18 @@ To install the project, follow these steps:
     ```python 
     python main.py
     ```
+
+### 🖥️ Interface
+<p align="center">
+  <img src="pictures/Assignment_on_topic.png" width="250" style="margin-right: 10px;"/>
+  <img src="pictures/Chat_with_historycontext.png" width="250" style="margin-right: 10px;"/>
+  <img src="pictures/Login.png" width="250" style="margin-right: 10px;"/>
+  <img src="pictures/Quiz_on_document.png" width="250" style="margin-right: 10px;"/>
+  <img src="pictures/Quiz_on_topic.png" width="250" style="margin-right: 10px;"/>
+  <img src="pictures/RAG.png" width="250" style="margin-right: 10px;"/>
+  <img src="pictures/Signup.png" width="250" style="margin-right: 10px;"/>
+  <img src="pictures/Welcome.png" width="250"/>
+</p>
 
     
 ### Key Additions
