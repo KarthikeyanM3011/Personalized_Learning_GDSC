@@ -31,15 +31,16 @@ def generate_assignment_questions(topic, level, num_questions=5):
     assignment_lines = assignment_lines.strip().split("\n")
     for line in assignment_lines:
         parts = line.split(" | ")
-        question_number = parts[0].strip()
-        question_text = parts[1].strip()
+        if len(parts)>=2:
+            question_number = parts[0].strip()
+            question_text = parts[1].strip()
 
-        question_data = {
-            "question_number": question_number,
-            "question": question_text
-        }
-        
-        questions.append(question_data)
+            question_data = {
+                "question_number": question_number,
+                "question": question_text
+            }
+            
+            questions.append(question_data)
     
     return questions
 

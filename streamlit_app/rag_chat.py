@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+from uuid import uuid4
 
 def show_rag_chat():
     """RAG Chat interface for uploading files."""
@@ -9,15 +10,33 @@ def show_rag_chat():
 
     if st.button("Upload and Start Chat"):
         if uploaded_files:
-            file_contents = []
-            for uploaded_file in uploaded_files:
-                file_contents.append({"filename": uploaded_file.name, "content": uploaded_file.getvalue().decode("utf-8")})
-            
-            response = requests.post("http://localhost:5000/upload_files", files={"files": uploaded_files})
-            if response.status_code == 200:
-                session_key = response.json().get("session_key")
-                st.session_state.session_key = session_key
-                st.success(f"Session created with key: {session_key}")
+            # Create a list of tuples for the files to upload
+            files = []
+            for file in uploaded_files:
+                files.append(("files", (file.name, file, file.type)))
+
+            # Sending files for processing
+            upload_response = requests.post("http://localhost:5000/upload_files", files=files)
+            if upload_response.status_code == 200:
+                files_content = upload_response.json().get("files", [])
+
+                # Prepare data for the /index API
+                index_data = [
+                    {
+                        "filename": file['filename'],
+                        "content": file['content']
+                    }
+                    for file in files_content
+                ]
+
+                # Call the /index API to get the session key
+                index_response = requests.post("http://localhost:5000/index", json=index_data)
+                if index_response.status_code == 200:
+                    session_key = index_response.json().get("session_key")
+                    st.session_state.session_key = session_key
+                    st.success(f"Session created with key: {session_key}")
+                else:
+                    st.error("Failed to create session.")
             else:
                 st.error("Failed to upload files.")
         else:
