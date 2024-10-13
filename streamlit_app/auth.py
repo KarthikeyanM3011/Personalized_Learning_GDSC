@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+from home import show_home
 
 def show_login_signup():
     """Show Login/Signup interface."""
@@ -38,6 +39,7 @@ def show_login_signup():
                     st.session_state.logged_in = True  # Set user session
                     st.session_state.user_email = user_email  # Store user email in session
                     st.success("Login successful!")
-                    st.session_state.choice = "Home"  # Set the choice to Home
+                    st.session_state.choice = "Home"
+                    st.rerun()  
                 else:
                     st.error("Login failed. Please check your credentials.")
