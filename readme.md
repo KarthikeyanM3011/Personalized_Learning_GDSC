@@ -9,7 +9,7 @@
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 
-![Robot Student](pictures/robot_student.png)
+![Robot Student](pictures/robot_student.webp)
 
 ## 🌟 Key Features
 ## Welcome
