@@ -76,14 +76,14 @@ To install the project, follow these steps:
 
 ### 🖥️ Interface
 <p align="center">
+  <img src="pictures/Signup.png" width="250" style="margin-right: 10px;"/>
+  <img src="pictures/Login.png" width="250" style="margin-right: 10px;"/>
+  <img src="pictures/Welcome.png" width="250"/>
   <img src="pictures/Assignment_on_topic.png" width="250" style="margin-right: 10px;"/>
   <img src="pictures/Chat_with_historycontext.png" width="250" style="margin-right: 10px;"/>
-  <img src="pictures/Login.png" width="250" style="margin-right: 10px;"/>
   <img src="pictures/Quiz_on_document.png" width="250" style="margin-right: 10px;"/>
   <img src="pictures/Quiz_on_topic.png" width="250" style="margin-right: 10px;"/>
   <img src="pictures/RAG.png" width="250" style="margin-right: 10px;"/>
-  <img src="pictures/Signup.png" width="250" style="margin-right: 10px;"/>
-  <img src="pictures/Welcome.png" width="250"/>
 </p>
 
     
