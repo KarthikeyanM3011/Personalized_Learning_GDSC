@@ -6,10 +6,8 @@
 - [RAG Chat](#rag-chat)
 - [Quiz Generation](#quiz-generation)
 - [Assignment Generation](#assignment-generation)
+- [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Welcome
 Welcome to the AI-Powered Chatbot and RAG System! This project leverages the capabilities of AI models, including the Mixtral model from Hugging Face, to provide intelligent interaction with uploaded documents, quizzes, and assignment generation based on user inputs.
@@ -42,6 +40,15 @@ The Assignment Generation feature enables users to create assignments based on s
 - **Topic-based assignments**: Generate assignments based on user-defined topics.
 - **Content extraction**: Use uploaded files to create relevant assignment questions.
 
+## Technologies Used
+This project incorporates several technologies for robust performance and modular architecture:
+
+- **Flask**: A lightweight WSGI web application framework for Python, used for building the backend.
+- **SQLAlchemy**: An ORM (Object-Relational Mapping) tool for interacting with relational databases in Python.
+- **Blueprints**: Used in Flask for modularizing the application, allowing for cleaner code and easier management of routes and views.
+- **Streamlit**: For building the interactive front end that communicates with the backend services.
+- **Hugging Face Models**: Integrating advanced NLP models for chatbot responses and document analysis.
+
 ## Installation
 To install the project, follow these steps:
 
@@ -65,3 +72,15 @@ To install the project, follow these steps:
     ```python 
     python main.py
     ```
+
+    
+### Key Additions
+- **Technologies Used**: This section details the technologies and frameworks used in the project, including SQLAlchemy and Flask.
+- **Installation Instructions**: Clarified the installation process, including how to set up both the backend and frontend, specifically for Windows users.
+- **Modular Architecture**: Highlighted the use of Blueprints for a modular approach in the Flask backend.
+
+Feel free to customize any sections further to suit your project's specifics!
+
+## Contact
+For any inquiries or feedback, you can reach me at:
+- Email: karthikeyanmjnk13579@gmail.com
